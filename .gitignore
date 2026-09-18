@@ -1,0 +1,16 @@
+# Generated files
+public/
+resources/
+
+# Hugo
+.hugo_build.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

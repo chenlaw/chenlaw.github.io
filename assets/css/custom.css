@@ -1,0 +1,118 @@
+/* ========================================
+   Custom styles for Hugo Stack theme
+   Stack 本身已很美观，这里只做少量增强
+   ======================================== */
+
+/* ---------- 渐变滚动条 ---------- */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #6366f1, #8b5cf6);
+  border-radius: 5px;
+}
+
+/* ---------- 选中文字 ---------- */
+::selection {
+  background: rgba(99, 102, 241, 0.25);
+}
+
+/* ---------- 平滑滚动 ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------- 侧边栏站点名渐变 ---------- */
+.site-name a {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6, #06b6d4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* ---------- 文章卡片悬停 ---------- */
+.article-list article,
+.article-list--compact article {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.article-list article:hover,
+.article-list--compact article:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-l2);
+}
+
+/* ---------- 文章标题悬停变色 ---------- */
+.article-title a {
+  transition: color 0.25s ease;
+}
+
+article:hover .article-title a {
+  color: #6366f1;
+}
+
+/* ---------- 封面图悬停缩放 ---------- */
+.article-image img {
+  transition: transform 0.4s ease;
+}
+
+article:hover .article-image img {
+  transform: scale(1.05);
+}
+
+/* ---------- 小部件标题点缀 ---------- */
+.widget-title::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 0.9em;
+  margin-right: 8px;
+  border-radius: 2px;
+  vertical-align: -0.1em;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+}
+
+/* ---------- 正文标题左侧竖条 ---------- */
+.article-content h2,
+.article-content h3 {
+  position: relative;
+  padding-left: 14px;
+}
+
+.article-content h2::before,
+.article-content h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 0.9em;
+  border-radius: 2px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+}
+
+/* ---------- 行内代码 ---------- */
+.article-content code {
+  color: #6366f1;
+}
+
+.article-content pre code {
+  color: inherit;
+}
+
+/* ---------- 标签云 ---------- */
+.tagCloud-tags a {
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.tagCloud-tags a:hover {
+  transform: translateY(-2px);
+}

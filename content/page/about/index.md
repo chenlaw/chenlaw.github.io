@@ -1,0 +1,59 @@
+---
+title: "关于我"
+slug: "about"
+image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=400&fit=crop"
+---
+
+## 👋 你好！
+
+欢迎来到我的技术博客！我是一名热爱技术的探索者，专注于**机器人**、**机器学习**和**软件工程**领域。
+
+## 🎯 研究方向
+
+### 🤖 机器人技术
+- 运动规划与控制
+- SLAM 与自主导航
+- 计算机视觉
+- 人机交互
+
+### 🧠 机器学习
+- 深度学习
+- 强化学习
+- 模型优化与部署
+- 论文复现与研究
+
+### 💻 软件工程
+- Python / C++ 开发
+- ROS2 机器人框架
+- 系统架构设计
+- 性能优化
+
+## 📚 技术栈
+
+| 领域 | 技术 |
+|------|------|
+| 编程语言 | Python, C++, MATLAB |
+| 机器人 | ROS2, OpenCV, PCL |
+| 机器学习 | PyTorch, TensorFlow, NumPy |
+| 工具 | Git, Docker, Linux |
+| 其他 | LaTeX, Markdown, Hugo |
+
+## 📝 关于博客
+
+这个博客是我记录学习历程、分享技术心得的地方。内容涵盖：
+
+- **技术教程**：从零开始的实战指南
+- **论文笔记**：前沿研究的阅读心得
+- **项目经验**：实际开发中的踩坑记录
+- **工具推荐**：提升效率的开发工具
+
+## 📫 联系我
+
+- **GitHub**: [github.com/yourusername](https://github.com/yourusername)
+- **Email**: [your@email.com](mailto:your@email.com)
+
+---
+
+> "Stay hungry, stay foolish." — Steve Jobs
+
+感谢你的访问，希望这里的文章对你有所帮助！

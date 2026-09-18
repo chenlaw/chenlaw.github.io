@@ -1,0 +1,128 @@
+baseURL = "https://chenlaw.github.io/"
+title = "Tech Explorer's Blog"
+theme = "hugo-theme-stack"
+defaultContentLanguage = "zh-cn"
+hasCJKLanguage = true
+
+[pagination]
+  pagerSize = 5
+
+[permalinks]
+  post = "/p/:slug/"
+  page = "/:slug/"
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[markup]
+  [markup.highlight]
+    style = "dracula"
+    lineNos = false
+    noClasses = false
+    guessSyntax = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+
+[related]
+  includeNewer = true
+  threshold = 60
+  toLower = false
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 200
+
+[[menu.main]]
+  identifier = "home"
+  name = "主页"
+  url = "/"
+  weight = -100
+  [menu.main.params]
+    icon = "home"
+
+[[menu.main]]
+  identifier = "archives"
+  name = "归档"
+  url = "/archives/"
+  weight = -70
+  [menu.main.params]
+    icon = "archives"
+
+[[menu.main]]
+  identifier = "search"
+  name = "搜索"
+  url = "/search/"
+  weight = -60
+  [menu.main.params]
+    icon = "search"
+
+[[menu.main]]
+  identifier = "about"
+  name = "关于"
+  url = "/about/"
+  weight = -50
+  [menu.main.params]
+    icon = "user"
+
+[[social]]
+  identifier = "github"
+  name = "GitHub"
+  url = "https://github.com/chenlaw"
+  [social.params]
+    icon = "brand-github"
+
+[params]
+  mainSections = ["post"]
+  rssFullContent = true
+
+  [params.footer]
+    since = 2026
+    customText = ""
+
+  [params.dateFormat]
+    published = "2006-01-02"
+    lastUpdated = "2006-01-02 15:04"
+
+  [params.sidebar]
+    compact = false
+    emoji = "🤖"
+    subtitle = "探索机器人、机器学习与编程的无限可能"
+    avatar = "img/avatar.png"
+
+  [params.article]
+    math = false
+    toc = true
+    readingTime = true
+    [params.article.license]
+      enabled = true
+      default = "Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+
+  [params.widgets]
+    homepage = [
+      { type = "search" },
+      { type = "archives", params = { limit = 5 } },
+      { type = "categories", params = { limit = 10 } },
+      { type = "tag-cloud", params = { limit = 10 } }
+    ]
+    page = [{ type = "toc" }]
+
+  [params.colorScheme]
+    toggle = true
+    default = "auto"
+
+  [params.comments]
+    enabled = false
+
+  [params.opengraph.twitter]
+    site = ""
+    card = "summary_large_image"

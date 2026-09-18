@@ -1,0 +1,3 @@
+{{- $customJS := resources.Get "js/custom.js" | minify | fingerprint }}
+<script src="{{ $customJS.RelPermalink }}" integrity="{{ $customJS.Data.Integrity }}" crossorigin="anonymous"></script>
+<script src="/live2d/autoload.js" defer></script>
