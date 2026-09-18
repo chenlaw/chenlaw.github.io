@@ -1,7 +1,6 @@
 ---
 title: "关于我"
 slug: "about"
-image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=400&fit=crop"
 ---
 
 ## 👋 你好！
@@ -49,8 +48,7 @@ image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=40
 
 ## 📫 联系我
 
-- **GitHub**: [github.com/yourusername](https://github.com/yourusername)
-- **Email**: [your@email.com](mailto:your@email.com)
+- **GitHub**: [github.com/chenlaw](https://github.com/chenlaw)
 
 ---
 

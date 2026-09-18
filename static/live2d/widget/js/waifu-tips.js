@@ -642,7 +642,7 @@
       console.error("[waifu] Invalid waifuApi setting, widget loading aborted");
       return;
     }
-    apiPath = waifuApi.endsWith("/") ? waifuApi : `${waifuApi}/`;
+    apiPath = waifuApi.endsWith("/") ? waifuApi.slice(0, -1) : waifuApi;
 
     // 清空存储的状态
     localStorage.removeItem(STORAGE_KEYS.display);
